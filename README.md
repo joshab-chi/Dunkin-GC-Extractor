@@ -39,6 +39,26 @@ playwright install chromium
 ```
 </details>
 
+## Run it all at once
+
+After setup and dropping your emails in `emails/` (Step 0 below):
+
+```bash
+source .venv/bin/activate
+python run.py --limit 1     # test one card first
+python run.py               # then the full batch
+```
+
+`run.py` chains the three steps (extract links → scrape → build spreadsheet).
+Override the reveal-link text for other retailers with `--anchor "<text>"`.
+
+### Via Claude Code
+
+This repo ships a `/extract` slash command and a `CLAUDE.md`, so inside Claude
+Code you can just run **`/extract`** (or ask "run the extractor") and Claude will
+do setup, a one-card test, the full batch, and report results — following the
+safety rules in `CLAUDE.md`.
+
 ## Step 0 — Export the emails from Gmail (no IMAP)
 
 You give the tool the emails as files — no password or IMAP needed. For more
