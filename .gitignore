@@ -1,0 +1,14 @@
+# Never share these — they contain live codes, personal emails, and sessions
+.venv/
+browser-profile/
+emails/*
+!emails/.gitkeep
+screenshots/*
+!screenshots/.gitkeep
+output/*
+!output/.gitkeep
+
+# Python / OS cruft
+__pycache__/
+*.pyc
+.DS_Store
