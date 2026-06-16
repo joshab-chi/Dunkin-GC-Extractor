@@ -153,12 +153,6 @@ apostrophe (e.g. `'05495962`) so Excel/Google Sheets keep them as text instead
 of dropping the zero. The `.xlsx` stores them as text cells directly (no
 apostrophe needed).
 
-## ⚠️ One-time-view links
-
-Some retailers invalidate the reveal page after the first load. If that's the
-case here, *any* automated visit burns the view. Before running the batch,
-manually open one link, then reload it — if the code is gone on reload, do not
-batch-scrape; tell Claude and we'll adjust.
 
 ## Security note
 
@@ -173,9 +167,6 @@ By using it you accept full responsibility for what it does on your machine and
 accounts. In particular:
 
 - **Only use it on gift cards you own** and emails in your own mailbox.
-- It opens links from your emails in a real browser. **One-time-view links can
-  be burned** by an automated visit (see above) — that's on you to check first.
-- Automated access may be against some retailers' or email providers' terms of
-  service. Confirm you're allowed to do this before running it.
+- It opens links from your emails in a real browser. 
 - Output files hold spendable codes. The author is not liable for any loss,
   lost cards, account actions, or other damages arising from its use.
