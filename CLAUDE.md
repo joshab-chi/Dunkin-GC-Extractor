@@ -31,7 +31,6 @@ Outputs land in `output/` (`gift_cards.csv`, `gift_cards.xlsx`) and `screenshots
 - **Output is spendable cash.** `output/`, `screenshots/`, `emails/`, and
   `browser-profile/` are git-ignored — never commit them.
 - **Never put real card numbers/PINs in code, comments, or commit messages.**
-  Use obvious placeholders (e.g. `1234 5678 9012 3456`). A real value once leaked
-  into a comment here and the repo was briefly public — don't repeat that.
+  Use obvious placeholders (e.g. `1234 5678 9012 3456`). 
 - Some reveal pages are **one-time-view**; an automated open can burn them. When
   unsure, have the user open one link manually and reload before batch-scraping.
